@@ -17,6 +17,10 @@ from simulation import (CommonsSimulationConfiguration, bootstrap_simulation,
 from utils import new_random_number_func
 
 
+def get_simulation_metrics(df_final):
+    average_sentiment = 0
+
+
 def run_simulation(c: CommonsSimulationConfiguration):
     initial_conditions, simulation_parameters = bootstrap_simulation(c)
 

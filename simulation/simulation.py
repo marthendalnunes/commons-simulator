@@ -134,7 +134,7 @@ def bootstrap_simulation(c: CommonsSimulationConfiguration):
     network = bootstrap_network(
         token_batches, c.proposals, commons._funding_pool, commons._token_supply, c.max_proposal_request,
         c.probability_func, c.random_number_func, c.gamma_func, c.exponential_func)
-
+    print("COLLATERAL", commons.token_price())
     initial_conditions = {
         "network": network,
         "commons": commons,
